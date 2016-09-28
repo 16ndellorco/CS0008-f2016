@@ -15,14 +15,14 @@ if unit in ['yes', 'Yes']:
         GCR = "good"
     else:
         GCR = "excellent"
-    print("Distance:____:    ", format(distance, '2,.3f'), "Miles     ", format(kilometers, '3,.3f'), "Km", sep=' ') #print in the needed format with 3 rows, (ask how to do rows correctly)
-    print("Gas:_________:     ", format(gas, '2,.3f'), "Gallons   ", format(liters, '3,.3f'), "Liters", sep=' ')
-    print("Consumption__:        ", format(distance/gas, '2,.3f'), "mpg        ", format(100*liters/kilometers, '3,.3f'), " L/100km", sep='')
+    print("Distance:____:", format(distance, "Miles ", kilometers, "Km", '3,.3f', sep='     ') #print in the needed format with 3 rows, (ask how to do rows correctly)
+    print("Gas:_________:", format(gas, "Gallons", liters, "Liters", '3,.3f', sep='     ')
+    print("Consumption__:", format(distance/gas, "mpg", (100*liters/kilometers, '3,.3f'), " L/100km", sep='        ')
     print("Your Gas Consumption Rating is", GCR)
 elif unit in ['no', 'No']: #if user says no they want to input information in metric system
     distance = float(input("How many kilometers did you drive? ")) #ask in terms of kilometers/liters
     gas = float(input("How many Liters of gas did you use? "))
-    miles = distance * .621371 #find miles so you can complete chart at the end
+    miles = distance * .621371 #find miles, gallons so you can complete chart at the end
     gallons = gas * .264172
     cm = gas * (distance*100) #use what the user provided to find the cm/efficiency
     if cm > 20:
