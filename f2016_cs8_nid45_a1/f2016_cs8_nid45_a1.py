@@ -6,20 +6,20 @@ if unit in ['yes', 'Yes']:
     liters = gas*3.78541
     cm = (liters*100)/kilometers  #use what you got from the conversions to determine cm
     if cm > 20:  #use given gas consumption rating ranges
-        GCR = "extremely poor"
+        GCR = "Extremely Poor"
     elif cm > 15:
-        GCR = "poor"
+        GCR = "Poor"
     elif cm > 10:
-        GCR = "average"
+        GCR = "Average"
     elif cm > 8:
-        GCR = "good"
+        GCR = "Good"
     else:
-        GCR = "excellent"
-    print(format(" ", '24s'), format("USC", '25s'), format("Metric"))
-    print("Distance:____: ", format(distance, '12.3f'), "Miles", format(kilometers, '22.3f'), "Km")  #print in the needed format with 3 columns, (ask how to do columns correctly)
-    print("Gas:_________: ", format(gas, '12.3f'), "Gallons", format(liters, '20.3f'), "Liters")
-    print("Consumption__:", format(distance/gas, '13.3f'), "mpg", format(100*liters/kilometers, '24.3f'), "L/100km")
-    print("\nYour Gas Consumption Rating is", GCR)
+        GCR = "Excellent"
+    print(format("\n ", '32s'), format("USC", '22s'), format("Metric"))
+    print("Distance:______________:", format(distance, '10.3f'), "Miles", format(kilometers, '19.3f'), "Km")  #print in the needed format with 3 columns, (ask how to do columns correctly)
+    print("Gas:___________________:", format(gas, '10.3f'), "Gallons", format(liters, '17.3f'), "Liters")
+    print("Consumption____________:", format(distance/gas, '10.3f'), "mpg", format(100*liters/kilometers, '21.3f'), "L/100km")
+    print("\nGas Consumption Rating : ", GCR)
 elif unit in ['no', 'No']:  #if user says no they want to input information in metric system
     distance = float(input("How many kilometers did you drive? "))  #ask in terms of kilometers/liters
     gas = float(input("How many Liters of gas did you use? "))
@@ -27,20 +27,20 @@ elif unit in ['no', 'No']:  #if user says no they want to input information in m
     gallons = gas * .264172
     cm = (gas*100)/distance  #use what the user provided to find the cm/efficiency
     if cm > 20:
-        GCR = "extremely poor"
+        GCR = "Extremely Poor"
     elif cm > 15:
-        GCR = "poor"
+        GCR = "Poor"
     elif cm > 10:
-        GCR = "average"
+        GCR = "Average"
     elif cm > 8:
-        GCR = "good"
+        GCR = "Good"
     else:
-        GCR = "excellent"
-    print(format(" ", '24s'), format("USC", '27s'), format("Metric"))
-    print("Distance _____:", format(miles, '12.3f'), "Miles", format(distance, '24.3f'), "Km", sep=' ')
-    print("Gas __________:", format(gallons, '12.3f'), "Gallons", format(gas, '22.3f'), "Liters", sep=' ')
-    print("Consumption __:", format(miles / gallons, '12.3f'), "mpg",\
-          format(100*(gas/distance), '26.3f'), "L/100km", sep=' ')
-    print("\nYour Gas Consumption Rating is", GCR) #give rating based on given data
+        GCR = "Excellent"
+    print(format("\n ", '31s'), format("USC", '23s'), format("Metric"))
+    print("Distance ______________:", format(miles, '9.3f'), "Miles", format(distance, '20.3f'), "Km", sep=' ')
+    print("Gas ___________________:", format(gallons, '9.3f'), "Gallons", format(gas, '18.3f'), "Liters", sep=' ')
+    print("Consumption ___________:", format(miles / gallons, '9.3f'), "mpg",\
+          format(100*(gas/distance), '22.3f'), "L/100km", sep=' ')
+    print("\nGas Consumption Rating :", GCR) #give rating based on given data
 else:
     print("""Please enter either "Yes" or "No""")  #user must say yes or no to initial question
