@@ -1,0 +1,12 @@
+/usr/local/bin/python3 "/Users/nickdellorco/Desktop/CS0008-f2016 4.44.10 PM/f2016_cs8_nid45_a1/f2016_cs8_nid45_a1.py"
+Are you using USC (US Customary Units)? yes
+How many miles did you drive? 100
+How many gallons of gas did you use? 3
+                         USC                       Metric
+Distance:____:       100.000 Miles                160.934 Km
+Gas:_________:         3.000 Gallons               11.356 Liters
+Consumption__:        33.333 mpg                    7.056 L/100km
+
+Your Gas Consumption Rating is excellent
+
+Process finished with exit code 0

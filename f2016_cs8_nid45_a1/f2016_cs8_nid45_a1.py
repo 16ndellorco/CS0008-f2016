@@ -16,10 +16,10 @@ if unit in ['yes', 'Yes']:
     else:
         GCR = "excellent"
     print(format(" ", '24s'), format("USC", '25s'), format("Metric"))
-    print("Distance:____: ", format(distance, '12.3f'), "Miles", format(kilometers, '22.3f'), "Km", sep=' ')  #print in the needed format with 3 columns, (ask how to do columns correctly)
-    print("Gas:_________: ", format(gas, '12.3f'), "Gallons", format(liters, '20.3f'), "Liters", sep=' ')
-    print("Consumption__:", format(distance/gas, '13.3f'), "mpg", format(100*liters/kilometers, '24.3f'), "L/100km", sep=' ')
-    print("Your Gas Consumption Rating is", GCR)
+    print("Distance:____: ", format(distance, '12.3f'), "Miles", format(kilometers, '22.3f'), "Km")  #print in the needed format with 3 columns, (ask how to do columns correctly)
+    print("Gas:_________: ", format(gas, '12.3f'), "Gallons", format(liters, '20.3f'), "Liters")
+    print("Consumption__:", format(distance/gas, '13.3f'), "mpg", format(100*liters/kilometers, '24.3f'), "L/100km")
+    print("\nYour Gas Consumption Rating is", GCR)
 elif unit in ['no', 'No']:  #if user says no they want to input information in metric system
     distance = float(input("How many kilometers did you drive? "))  #ask in terms of kilometers/liters
     gas = float(input("How many Liters of gas did you use? "))
@@ -41,6 +41,6 @@ elif unit in ['no', 'No']:  #if user says no they want to input information in m
     print("Gas __________:", format(gallons, '12.3f'), "Gallons", format(gas, '22.3f'), "Liters", sep=' ')
     print("Consumption __:", format(miles / gallons, '12.3f'), "mpg",\
           format(100*(gas/distance), '26.3f'), "L/100km", sep=' ')
-    print("Your Gas Consumption Rating is", GCR) #give rating based on given data
+    print("\nYour Gas Consumption Rating is", GCR) #give rating based on given data
 else:
     print("""Please enter either "Yes" or "No""")  #user must say yes or no to initial question
