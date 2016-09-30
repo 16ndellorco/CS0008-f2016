@@ -36,11 +36,11 @@ elif unit in ['no', 'No']:  #if user says no they want to input information in m
         GCR = "Good"
     else:
         GCR = "Excellent"
-    print(format("\n ", '31s'), format("USC", '23s'), format("Metric"))
-    print("Distance ______________:", format(miles, '9.3f'), "Miles", format(distance, '20.3f'), "Km", sep=' ')
-    print("Gas ___________________:", format(gallons, '9.3f'), "Gallons", format(gas, '18.3f'), "Liters", sep=' ')
-    print("Consumption ___________:", format(miles / gallons, '9.3f'), "mpg",\
-          format(100*(gas/distance), '22.3f'), "L/100km", sep=' ')
+    print(format("\n ", '32s'), format("USC", '22s'), format("Metric"))
+    print("Distance ______________:", format(miles, '10.3f'), "Miles", format(distance, '19.3f'), "Km", sep=' ')
+    print("Gas ___________________:", format(gallons, '10.3f'), "Gallons", format(gas, '17.3f'), "Liters", sep=' ')
+    print("Consumption ___________:", format(miles / gallons, '10.3f'), "mpg",\
+          format(100*(gas/distance), '21.3f'), "L/100km", sep=' ')
     print("\nGas Consumption Rating :", GCR) #give rating based on given data
 else:
     print("""Please enter either "Yes" or "No""")  #user must say yes or no to initial question
