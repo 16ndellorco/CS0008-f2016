@@ -1,0 +1,28 @@
+My initial starting point for this project was to look over the assignment sheet in order to find the main
+points of emphasis in the code. I set this up as somewhat of a flow chart so I could define what I wanted
+the program to do.
+1. Ask the user if they wanted to use USC or Metric units
+2. Ask for the distance driven in the given unit
+3. Ask for the amount of gas used in given unit
+4. Convert the given unit to the other system (USC to Metric or Metric to USC, both needed for chart at the end)
+5. Calculate the cm ((gas*100)/distance)
+6. From the computed cm find the Gas Consumption Rating
+7. Set up chart that shows the inputted data in both Metric and USC units and gives user their Gas Consumption Rating
+(No thousands comma, and 3 decimal places)
+
+So that was how I set up my basic outline for what I wanted the program to do. Then I started to write the program
+keeping all of these steps in consideration. I order to ensure functionality I decided to write the program as a
+nested if-elif-else statement. So the initial question was formed as an input to find which units the user wanted to put
+in the program. If the user said yes they would then input their data in terms of miles and gallons, while if they said
+no they would input their information in terms of kilometers and liters. Meanwhile if the user would enter anything
+other than yes or no there would be an error for an incorrect input. The user then put in their data in whatever units
+they had initially selected. I then had the program do the conversions to the opposite unit system under different
+variable names in order to differentiate them for the chart at the end where both were needed. After that I had saved
+the values for miles, kilometers, gallons, and liters and could derive the mpg and cm from those so the only numerical
+value I still needed was the cm and its coinciding Gas Consumption Rating. So from there I set up an if-elif-else
+statement where I could find the cm ((liters*100)/kilometers) and set the given GCR for the range of the calculated cm.
+At this point I had all of the data I needed to complete the table at the end and the only challenge was to find out
+how to line up the columns. Once I found the correct notation for the columns I was easily able to convert the calculated
+values and put them into an easy to understand chart format. Then after testing and making minor corrections that I found
+through these trial runs, I was able to ensure that the program would work for both USC and Metric units and display
+the correct values and ratings for any number no matter how large.
