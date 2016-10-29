@@ -1,0 +1,15 @@
+/usr/local/bin/python3 "/Users/nickdellorco/Desktop/CS0008-f2016 4.44.10 PM/f2016_cs8_nid45_a2/Assignment 2.py"
+File to be read: f2016_cs8_a2.data.1.csv
+Partial Total # of lines:         50
+Partial distance run    :   2298.967
+
+File to be read: f2016_cs8_a2.data.2.csv
+Partial Total # of lines:         50
+Partial distance run    :   2195.061
+
+File to be read: quit
+Totals
+Total # of lines        :        100
+Total distance run      :   4494.027
+
+Process finished with exit code 0
