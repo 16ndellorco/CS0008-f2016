@@ -1,0 +1,15 @@
+I started doing this assingment by writing out an outline on a seperate piece of paper where i put together the
+steps that I wanted to take to get the result I wanted. I wrote it out as a list like this
+
+Define the functions I need
+Start with PrintKV function where I can print and format the values based on the given data type
+To do this I needed to check what data type the input was
+
+Then I decided to define the processfile where the function would evaluate the lines in the given file. The function
+has to track the amount of lines and the total distance. Then I had to set a loop that would go through the file
+lines and take out the new line at the end of each value. Then I had to take out the commas seperating the values.
+From there we could count the lines as they were evaluated in 1 line increments.
+
+When I started on the main function I could create a loop where it would aske for a file to evaluate as many times
+as needed until the user inputted the word "quit", where it would stop and diaplay the totals of the docements
+added up. Then the only remaining issue was to call the main function at the end so it would be used.
