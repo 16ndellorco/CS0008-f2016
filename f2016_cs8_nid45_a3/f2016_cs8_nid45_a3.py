@@ -43,8 +43,8 @@ def get_stats(info):
             distance = float(item[1])
             total_distance += distance
 
-            # add participats to a dict to count for multiple
-            # records and also distance
+            # add participants to a dictionary to count for multiple
+            # records the distance they ran
             if item[0].strip() not in participants.keys():
                 participants[item[0].strip()] = (1, distance)
             else:
@@ -78,8 +78,7 @@ def get_stats(info):
     # now return stats
     return stats
 
-# main function this is the first entry
-# into the program
+# main function
 def main():
     # gets the file name to be read
     masterfile = 'f2016_cs8_a3.data.txt'
