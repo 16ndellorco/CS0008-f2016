@@ -1,3 +1,8 @@
+#
+# MN: need proper header as shown in class
+# 
+
+#
 # printKV: prints and formats key and values based on data type
 def printKV(key, value, klen = 0):
     # prints simple strings without value
@@ -10,6 +15,8 @@ def printKV(key, value, klen = 0):
         print('{:<{}}: {:>10.3f}'.format(key, len(key) + klen, value))
     elif isinstance(value, int):
         print('{:<{}}: {:>10}'.format(key, len(key) + klen, value))
+
+#
 # processFile: process a file and reads and loops through all lines of file handled
 def processFile(fh):
     # read all lines and store them in a variable
@@ -36,10 +43,14 @@ def processFile(fh):
             linecount += 1
     # returns two values, line count and total distance
     return (linecount, totaldistance)
+
+#
+# MN: what does this function do?
 def summary(totallinecount, totaldistance):
     printKV('Totals', None)
     printKV('Total # of lines', totallinecount,  8)
     printKV('Total distance run', totaldistance, 6)
+
 # main function this is the first entry into the program
 def main():
     finallinecount = 0
@@ -49,6 +60,7 @@ def main():
         # gets the file name to be read
         fileName = input('File to be read: ')
         # if user enters quit, display totals
+        # MN: assignment requested that the program should exit when user enter quit, q or type enter directly
         if fileName.lower() == 'quit':
             # display of totals
             summary(finallinecount, finaldistance)
@@ -70,6 +82,9 @@ def main():
                 finaldistance  += values[1]
             # file is automatically closed when using the keyword
             print(end='\n')
+
+
 if __name__ == "__main__":
     # call the main function
     main()
+
