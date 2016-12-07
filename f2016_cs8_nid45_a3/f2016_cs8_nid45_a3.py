@@ -1,5 +1,15 @@
-
+# Name       : Nick Dell'Orco
+# Email      : nid45@pitt.edu
+# Date       : 12/7/2016
+# Class      : CS0008-f2016
+# Instructor : Max Novelli (man8@pitt.edu)
+#
+# Description:
+# Program that takes a masterfile composed of multiple .csv files that compile a list of names and
+# a distance that they ran. The program then displays how many lines are in the .csv files,who ran
+# the furthest, the least,  and shows how many people show up in multiple .csv files
 # printKV: prints and formats key and values based on data type
+
 def printKV(key, value, klen = 0):
     # print simple strings without value
     if value == None:
