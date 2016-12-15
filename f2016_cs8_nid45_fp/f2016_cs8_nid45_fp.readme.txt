@@ -1,0 +1,6 @@
+For this program I was able to use most of my work from assignment 2. The first thing I did was
+make the changes from the comments I received. I added the proper headerand then added the quit
+functionality where the program would quit when quit, q, or enter was input in the masterfile spot.
+The I had to create the class "paricipant" where I could initialize the names, distances, and runs
+for each person. Then from there I could use a counter to add to the runs and get the given
+distances. I then used the stringify function to turn all of the items into strings.
