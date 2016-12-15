@@ -1,0 +1,20 @@
+/usr/local/bin/python3 "/Users/nickdellorco/Desktop/CS0008-f2016 4.44.10 PM/f2016_cs8_nid45_fp/f2016_cs8_nid45_fp.py"
+What is the name of the materfile? f2016_cs8_fpdata.txt
+Number of Input files read          : 3
+Total number of lines read          : 450
+
+Total distance run                  : 23222.95595
+
+Max distance run                    : 99.91761
+by participant                      : Roland
+
+Min distance run                    : 0.05789
+by participant                      : Alex
+
+Total number of participants        : 450
+Number of participants
+with multiple records               : 60
+
+
+
+Process finished with exit code 0
