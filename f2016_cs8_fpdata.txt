@@ -1,3 +1,0 @@
-f2016_cs8_fpdata1.csv
-f2016_cs8_fpdata2.csv
-f2016_cs8_fpdata3.csv
